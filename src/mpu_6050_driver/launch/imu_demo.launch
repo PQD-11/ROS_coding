@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<launch>
+
+  <node name="imu_node" pkg="mpu_6050_driver" type="imu_node.py" >
+  </node>
+
+  <node name="tf_broadcaster_imu" pkg="mpu_6050_driver" type="tf_broadcaster_imu.py" >
+  </node>
+  
+  <node type="rviz" name="rviz" pkg="rviz">
+  </node>
+ 
+</launch>
